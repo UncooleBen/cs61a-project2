@@ -62,6 +62,7 @@ def enumerate(s, start=0):
     """
     # BEGIN Question 0
     "*** YOUR CODE HERE ***"
+    return [x for x in zip(range(start, start+len(s)), [x for x in s])]
     # END Question 0
 
 def distance(pos1, pos2):
@@ -82,4 +83,9 @@ def mean(s):
     """
     # BEGIN Question 1
     "*** YOUR CODE HERE ***"
+    assert len(s)>0, "list must be non-empty"
+    sum = 0.0
+    for elem in s:
+        sum += elem
+    return sum / len(s)
     # END Question 1
