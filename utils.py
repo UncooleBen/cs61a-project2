@@ -29,7 +29,7 @@ def key_of_min_value(d):
     'c'
     """
     # BEGIN Question 0
-    return min('REPLACE THIS WITH YOUR SOLUTION')
+    return min(d, key=d.get)
     # END Question 0
 
 def zip(*sequences):
